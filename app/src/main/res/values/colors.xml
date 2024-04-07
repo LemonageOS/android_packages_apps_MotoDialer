@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <!--
-  note: it seems some colors would show on xml but can't be used in dialer, maybe resource issue so I used colors already present in the default xml
+  note: it seems some colors would show on xml but can't be used in dialer, maybe resource issue
   note 2: Don't use dark mode while checking colors in xml, some will show diff colors
-  note 3: commented previous color, no of replacements (I always used replace all for now)
+  note 3: commented all replaced colors with "lightmode" including the ui part it changed
 -->
+
 <resources>
     <color name="DO_NOT_USE_OR_I_WILL_BREAK_YOU_text_span_tertiary_button">#ff1a73e8</color>
     <color name="abc_decor_view_status_guard">#ff000000</color>
@@ -13,11 +13,11 @@
     <color name="abc_search_url_text_pressed">@android:color/black</color>
     <color name="abc_search_url_text_selected">@android:color/black</color>
     <color name="accent_material_dark">#ff455a64</color>
-    <color name="accent_material_light">@color/prc_drawer_divider_color</color><!-- material_deep_teal_500 1 replacement-->
+    <color name="accent_material_light">@color/material_deep_teal_500</color>
     <color name="action_bar_title_text_color">#ff000000</color>
-    <color name="alert_dialog_bg">@color/background_light_gray</color> 
+    <color name="alert_dialog_bg">@color/color2</color><!--dialpad,navigation bg lightmode-->
     <color name="alert_dialog_buttonbar_text_color">#ff37474f</color>
-    <color name="androidx_core_ripple_material_light">@color/cardview_shadow_end_color</color><!-- #1f000000 6r dialer navig button light-->
+    <color name="androidx_core_ripple_material_light">#1f000000</color>
     <color name="androidx_core_secondary_text_default_material_light">#8a000000</color>
     <color name="answer_swipe_text_color">#b3ffffff</color>
     <color name="answered_call">#ff00c853</color>
@@ -26,13 +26,13 @@
     <color name="avator_background_color">@android:color/system_neutral1_50</color>
     <color name="background_floating_material_dark">@color/material_grey_800</color>
     <color name="background_floating_material_light">@android:color/white</color>
-    <color name="background_item_grey_pressed">@color/background_light_gray</color><!-- #ffcfd8dc 10r dialpad light bg-->
+    <color name="background_item_grey_pressed">#ffe0e0e0</color>
     <color name="background_material_dark">#ff455a64</color>
     <color name="background_material_light">@color/material_grey_50</color>
     <color name="block_report_spam_primary_text_color">#de000000</color>
     <color name="blocked_contact_background">#ffa52714</color>
     <color name="blocked_number_block_color">#fff44336</color>
-    <color name="blue_grey_100">@color/background_light_gray</color>
+    <color name="blue_grey_100">#ffcfd8dc</color>
     <color name="brand_logo_bg_color">#ff000000</color>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
@@ -48,10 +48,10 @@
     <color name="bubble_menu_color">@color/bubble_active_text</color>
     <color name="bubble_primary">#ff5f6368</color>
     <color name="bubble_primary_background">@android:color/white</color>
-    <color name="bubble_primary_background_darken">@color/call_composer_divider</color><!-- #33000000 -->
+    <color name="bubble_primary_background_darken">#33000000</color>
     <color name="button_material_dark">#ff5a595b</color>
-    <color name="button_material_light">@color/google_grey_100</color><!-- #ffd6d7d7 1r-->
-    <color name="call_accept_background">@color/abc_search_url_text_normal</color><!-- #ff006b5b 3r callbutton light-->
+    <color name="button_material_light">#ffd6d7d7</color>
+    <color name="call_accept_background">#ff006b5b</color>
     <color name="call_composer_background_color">#7f000000</color>
     <color name="call_composer_divider">#12000000</color>
     <color name="call_details_button_video_tint">#8a000000</color>
@@ -111,15 +111,15 @@
     <color name="design_fab_stroke_top_inner_color">#1affffff</color>
     <color name="design_fab_stroke_top_outer_color">#2effffff</color>
     <color name="design_snackbar_background_color">#ff323232</color>
-    <color name="dialer_background_color">@color/m3_ref_palette_error99</color>
-    <color name="dialer_call_green">@color/prc_positive_green</color>
+    <color name="dialer_background_color">@color/colorw</color><!--dialer bg,settings lightmode-->
+    <color name="dialer_call_green">@color/colorg</color><!--call button bg lightmode-->
     <color name="dialer_dark_background_color">#ff455a64</color>
     <color name="dialer_dark_dialog_background_color">#ff313235</color>
     <color name="dialer_dark_navigation_bar_color">#ff131416</color>
     <color name="dialer_dark_primary_text_color_inverse">@color/google_blue_50</color>
     <color name="dialer_dark_secondary_color">@color/lake_a1_100</color>
     <color name="dialer_dark_secondary_text_color_inverse">@color/lake_a1_100</color>
-    <color name="dialer_dark_theme_color">#ff455a64</color><!-- reverted 11r dialer dark bg-->
+    <color name="dialer_dark_theme_color">#ff455a64</color>
     <color name="dialer_dark_theme_color_20pct">#33202124</color>
     <color name="dialer_dark_theme_color_dark">#ff2374ce</color>
     <color name="dialer_divider_line_color">#11000000</color>
@@ -132,9 +132,9 @@
     <color name="dialer_red_highlight_color">#ffff1744</color>
     <color name="dialer_secondary_color">@color/google_blue_600</color>
     <color name="dialer_secondary_text_color_inverse">@color/google_blue_600</color>
-    <color name="dialer_secondarybar_text_color">#7f000000</color>
+    <color name="dialer_secondarybar_text_color">@color/google_grey_900</color>
     <color name="dialer_snackbar_action_text_color">@color/lake_a1_200</color>
-    <color name="dialer_theme_color">@color/m3_ref_palette_error99</color><!-- #ffb0bfc5 13r dialer light bg-->
+    <color name="dialer_theme_color">#ffb0bfc5</color>
     <color name="dialer_theme_color_20pct">@color/google_blue_600</color>
     <color name="dialer_theme_color_dark">#ff1c3aa9</color>
     <color name="dialpad_delete_icon_color">#99000000</color>
@@ -178,11 +178,11 @@
     <color name="incall_background_spam">#e9c22e2e</color>
     <color name="incall_button_fill_color">#ffffffff</color>
     <color name="incall_call_spam_background_color">#ffff5a64</color>
-    <color name="incall_dialpad_key_bg">@color/background_light_gray</color>
-    <color name="incoming_answer_icon">@color/abc_search_url_text_normal</color>
+    <color name="incall_dialpad_key_bg">#ffcfd8dc</color>
+    <color name="incoming_answer_icon">#ff006b5b</color>
     <color name="lake_a1_0">@android:color/system_accent1_0</color>
     <color name="lake_a1_10">@android:color/system_accent1_10</color>
-    <color name="lake_a1_100">@color/m3_ref_palette_error99</color>
+    <color name="lake_a1_100">#ffb0bfc5</color>
     <color name="lake_a1_1000">@android:color/system_accent1_1000</color>
     <color name="lake_a1_200">@android:color/system_accent1_200</color>
     <color name="lake_a1_300">@android:color/system_accent1_300</color>
@@ -194,8 +194,8 @@
     <color name="lake_a1_800">@android:color/system_accent1_800</color>
     <color name="lake_a1_900">@android:color/system_accent1_900</color>
     <color name="lake_a2_0">@android:color/system_accent2_0</color>
-    <color name="lake_a2_10">@color/m3_ref_palette_error99</color>
-    <color name="lake_a2_100">@color/m3_ref_palette_error99</color>
+    <color name="lake_a2_10">#ffb0bfc5</color>
+    <color name="lake_a2_100">#ffb0bfc5</color>
     <color name="lake_a2_1000">@android:color/system_accent2_1000</color>
     <color name="lake_a2_200">@android:color/system_accent2_200</color>
     <color name="lake_a2_300">@android:color/system_accent2_300</color>
@@ -226,20 +226,20 @@
     <color name="lake_n1_200">@android:color/system_neutral1_200</color>
     <color name="lake_n1_300">@android:color/system_neutral1_300</color>
     <color name="lake_n1_400">#ff455a64</color>
-    <color name="lake_n1_50">@color/background_light_gray</color>
-    <color name="lake_n1_500">@color/background_light_gray</color>
+    <color name="lake_n1_50">#ffcfd8dc</color>
+    <color name="lake_n1_500">#ffcfd8dc</color>
     <color name="lake_n1_600">@android:color/system_neutral1_600</color>
     <color name="lake_n1_700">@android:color/system_neutral1_700</color>
     <color name="lake_n1_800">#ff37474f</color>
     <color name="lake_n1_900">#ff455a64</color>
     <color name="lake_n2_0">#ff546e7a</color>
-    <color name="lake_n2_10">@color/m3_ref_palette_error99</color>
+    <color name="lake_n2_10">#ffb0bfc5</color>
     <color name="lake_n2_100">#ff556a74</color>
     <color name="lake_n2_1000">#ffff5a64</color>
-    <color name="lake_n2_200">@color/m3_ref_palette_error99</color>
-    <color name="lake_n2_300">@color/m3_ref_palette_error99</color>
+    <color name="lake_n2_200">#ffb0bfc5</color>
+    <color name="lake_n2_300">#ffb0bfc5</color>
     <color name="lake_n2_400">#ff546e7a</color>
-    <color name="lake_n2_50">@color/m3_ref_palette_error99</color>
+    <color name="lake_n2_50">#ffb0bfc5</color>
     <color name="lake_n2_500">#ff78909c</color>
     <color name="lake_n2_600">#ff546e7a</color>
     <color name="lake_n2_700">#ff98b0bc</color>
@@ -487,7 +487,7 @@
     <color name="m3_sys_color_light_surface_variant">@color/m3_ref_palette_neutral_variant90</color>
     <color name="m3_sys_color_light_tertiary">@color/m3_ref_palette_tertiary40</color>
     <color name="m3_sys_color_light_tertiary_container">@color/m3_ref_palette_tertiary90</color>
-    <color name="main_navigation_bar_bg">@color/m3_ref_palette_error99</color>
+    <color name="main_navigation_bar_bg">#ffb0bfc5</color>
     <color name="material_blue_grey_800">#ff37474f</color>
     <color name="material_blue_grey_900">#ff263238</color>
     <color name="material_blue_grey_950">#ff21272b</color>
@@ -560,7 +560,7 @@
     <color name="material_dynamic_tertiary95">@color/m3_ref_palette_dynamic_tertiary95</color>
     <color name="material_dynamic_tertiary99">@color/m3_ref_palette_dynamic_tertiary99</color>
     <color name="material_grey_100">#fff5f5f5</color>
-    <color name="material_grey_300">@color/background_light_gray</color>
+    <color name="material_grey_300">#ffe0e0e0</color>
     <color name="material_grey_50">#fffafafa</color>
     <color name="material_grey_600">#ff757575</color>
     <color name="material_grey_800">#ff424242</color>
@@ -575,7 +575,7 @@
     <color name="mtrl_btn_transparent_bg_color">#00ffffff</color>
     <color name="mtrl_scrim_color">#52000000</color>
     <color name="mtrl_textinput_default_box_stroke_color">#6b000000</color>
-    <color name="mtrl_textinput_disabled_color">@color/cardview_shadow_end_color</color>
+    <color name="mtrl_textinput_disabled_color">#1f000000</color>
     <color name="mtrl_textinput_filled_box_default_background_color">#0a000000</color>
     <color name="mtrl_textinput_focused_box_stroke_color">#00000000</color>
     <color name="mtrl_textinput_hovered_box_stroke_color">#de000000</color>
@@ -588,13 +588,13 @@
     <color name="notification_icon_bg_color">#ff9e9e9e</color>
     <color name="notification_material_background_media_default_color">#ff424242</color>
     <color name="notify_background_color">#fffffffe</color>
-    <color name="notify_shape_color">@color/cardview_shadow_end_color</color>
+    <color name="notify_shape_color">#1f000000</color>
     <color name="on_primary_container">@android:color/system_accent1_900</color>
     <color name="paginator_dot">#ffffffff</color>
     <color name="paginator_path">#66ffffff</color>
     <color name="people_app_theme_color">#ff363636</color>
     <color name="prc_Digits_text_color">#ff37474f</color>
-    <color name="prc_actionMode_color">@color/m3_ref_palette_error99</color>
+    <color name="prc_actionMode_color">#ffb0bfc5</color>
     <color name="prc_audio_dialog_shadow">#80e2e2e2</color>
     <color name="prc_audio_view_play_pause">@color/lake_a2_100</color>
     <color name="prc_audio_view_play_start">@color/lake_a2_100</color>
@@ -620,7 +620,7 @@
     <color name="prc_cli_call_log_call_btn_color">@color/normal_call_btn_color</color>
     <color name="prc_cli_navigation_bar_color">@color/lake_n1_50</color>
     <color name="prc_conversation_toolbar_name">#de000000</color>
-    <color name="prc_default_view_bg">@color/m3_ref_palette_error99</color>
+    <color name="prc_default_view_bg">@color/color2</color><!-- dialer header bg lightmode -->
     <color name="prc_delete_button_able_color">@color/lake_n2_600</color>
     <color name="prc_delete_button_unable_color">@color/lake_n1_400</color>
     <color name="prc_dialpad_call_icon_color">@color/lake_n1_50</color>
@@ -632,15 +632,15 @@
     <color name="prc_end_call_button_color">#ffff582e</color>
     <color name="prc_header_text_color">#ff455a64</color>
     <color name="prc_incall_bg">#cc000000</color>
-    <color name="prc_incall_bg_20">@color/call_composer_divider</color>
+    <color name="prc_incall_bg_20">#33000000</color>
     <color name="prc_incall_button_check">#ff41a5f5</color>
-    <color name="prc_incall_button_normal">@color/m3_ref_palette_error99</color>
-    <color name="prc_incall_dialpad_primary">@color/background_light_gray</color>
+    <color name="prc_incall_button_normal">#ffb0bfc5</color>
+    <color name="prc_incall_dialpad_primary">#ffcfd8dc</color>
     <color name="prc_incall_dialpad_secondary">#00000000</color>
-    <color name="prc_incall_grid_text_color">@color/background_light_gray</color>
+    <color name="prc_incall_grid_text_color">#ffcfd8dc</color>
     <color name="prc_incall_speaker_more_color">#b3ffffff</color>
     <color name="prc_incall_windowpop_bg_color">#deffffff</color>
-    <color name="prc_line_black_color">@color/cardview_shadow_end_color</color>
+    <color name="prc_line_black_color">#1f000000</color>
     <color name="prc_msg_voicemail_call_button_line_color">#4dffffff</color>
     <color name="prc_navagation_icon_no_select_color">@color/lake_n2_700</color>
     <color name="prc_navagation_icon_select_color">@color/lake_a2_900</color>
@@ -648,7 +648,7 @@
     <color name="prc_negative_red">#ffba2500</color>
     <color name="prc_notification_icon_bg_color">@color/lake_a1_600</color>
     <color name="prc_popupmenu_text_color">@color/lake_n1_900</color>
-    <color name="prc_positive_green">@color/abc_search_url_text_normal</color>
+    <color name="prc_positive_green">#ff006b5b</color>
     <color name="prc_record_greeting_dialog_close_color">@color/lake_n2_600</color>
     <color name="prc_record_select_color_normal">#de000000</color>
     <color name="prc_record_select_icon_color">@color/lake_a1_600</color>
@@ -666,9 +666,9 @@
     <color name="prc_transparent">#00000000</color>
     <color name="prc_turn_off_thumb_color">@color/lake_n2_300</color>
     <color name="prc_turn_off_track_color">@color/lake_n2_500</color>
-    <color name="prc_turn_on_thumb_color">@color/background_light_gray</color>
+    <color name="prc_turn_on_thumb_color">#ffcfd8dc</color>
     <color name="prc_turn_on_track_color">@color/lake_a1_600</color>
-    <color name="prc_tutorial_button_line_color">@color/cardview_shadow_end_color</color>
+    <color name="prc_tutorial_button_line_color">#1f000000</color>
     <color name="prc_voice_back_color">@color/lake_a2_100</color>
     <color name="prc_voice_black_alpha_12">#ff416990</color>
     <color name="prc_voice_black_alpha_54">#8a000000</color>
@@ -692,7 +692,7 @@
     <color name="primary_text_disabled_material_light">#39000000</color>
     <color name="remove_highlighted_text_color">#ffff3f3b</color>
     <color name="ripple_material_dark">#33ffffff</color>
-    <color name="ripple_material_light">@color/cardview_shadow_end_color</color>
+    <color name="ripple_material_light">@color/color3</color><!--navigation button ripple effect lightmode-->
     <color name="rtt_button_selected_color">#ff2a56c6</color>
     <color name="rtt_button_unselected_color">#dd000000</color>
     <color name="rtt_transcript_background_color">#ffeceff1</color>
@@ -740,7 +740,16 @@
     <color name="zxing_transparent">#00000000</color>
     <color name="zxing_viewfinder_laser">#ffcc0000</color>
     <color name="zxing_viewfinder_mask">#60000000</color>
-
-    <!-- custom colors -->
-    <color name="background_light_gray">#fff1f1f1</color>
+    
+    <!--custom colors --> 
+    <color name="colorw">#ffffffff</color>
+    <color name="color1">#fff8f9fa</color>
+    <color name="color2">#fff1f3f4</color>
+    <color name="color3">#ffe8eaed</color>
+    <color name="color4">#ffdadce0</color>
+    <color name="color5">#ffbdc1c6</color>
+    <color name="colorg">#ff38d39f</color>
+    <color name="colorr">#ffff4342</color>
+    
+    
 </resources>
