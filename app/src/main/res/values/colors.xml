@@ -620,7 +620,7 @@
     <color name="prc_cli_call_log_call_btn_color">@color/normal_call_btn_color</color>
     <color name="prc_cli_navigation_bar_color">@color/lake_n1_50</color>
     <color name="prc_conversation_toolbar_name">#de000000</color>
-    <color name="prc_default_view_bg">@color/color2</color><!-- dialer header bg lightmode -->
+    <color name="prc_default_view_bg">@color/colorw</color><!-- dialer header bg lightmode -->
     <color name="prc_delete_button_able_color">@color/lake_n2_600</color>
     <color name="prc_delete_button_unable_color">@color/lake_n1_400</color>
     <color name="prc_dialpad_call_icon_color">@color/lake_n1_50</color>
