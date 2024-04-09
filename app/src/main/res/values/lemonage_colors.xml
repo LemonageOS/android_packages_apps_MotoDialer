@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!--custom colors for MotoDialer --> 
+    <color name="colorw">#ffffffff</color>
+    <color name="color1">#fff8f9fa</color>
+    <color name="color2">#fff1f3f4</color>
+    <color name="color3">#ffe8eaed</color>
+    <color name="color4">#ffdadce0</color>
+    <color name="color5">#ffbdc1c6</color>
+    <color name="colorg">#ff006b5b</color>
+    <color name="colorr">#ff00c853</color>
+</resources>

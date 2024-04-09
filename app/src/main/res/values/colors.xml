@@ -740,16 +740,5 @@
     <color name="zxing_transparent">#00000000</color>
     <color name="zxing_viewfinder_laser">#ffcc0000</color>
     <color name="zxing_viewfinder_mask">#60000000</color>
-    
-    <!--custom colors --> 
-    <color name="colorw">#ffffffff</color>
-    <color name="color1">#fff8f9fa</color>
-    <color name="color2">#fff1f3f4</color>
-    <color name="color3">#ffe8eaed</color>
-    <color name="color4">#ffdadce0</color>
-    <color name="color5">#ffbdc1c6</color>
-    <color name="colorg">#ff006b5b</color>
-    <color name="colorr">#ff00c853</color>
-    
-    
+
 </resources>
