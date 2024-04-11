@@ -15,7 +15,7 @@
     <color name="accent_material_dark">#ff455a64</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
     <color name="action_bar_title_text_color">#ff000000</color>
-    <color name="alert_dialog_bg">@color/color2</color><!--dialpad,navigation bg lightmode-->
+    <color name="alert_dialog_bg">@color/color1</color><!--dialpad,navigation bg lightmode-->
     <color name="alert_dialog_buttonbar_text_color">#ff37474f</color>
     <color name="androidx_core_ripple_material_light">#1f000000</color>
     <color name="androidx_core_secondary_text_default_material_light">#8a000000</color>
