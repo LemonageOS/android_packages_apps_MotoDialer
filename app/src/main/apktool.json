@@ -24,7 +24,7 @@
     "versionCode": "12300110"
   },
   "UsesFramework": {
-    "ids": [1],
+    "ids": [30,31],
     "tag": null
   },
   "unknownFiles": {
