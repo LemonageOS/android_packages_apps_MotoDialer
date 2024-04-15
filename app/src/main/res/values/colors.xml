@@ -681,7 +681,7 @@
     <color name="prc_voicemail_button_bg">@color/lake_a2_100</color>
     <color name="prc_voicemail_button_text_color">@color/lake_n1_50</color>
     <color name="preference_fallback_accent_color">#ff008577</color>
-    <color name="primary_container">@color/colorg</color><!--add contact,dialer buttons-->
+    <color name="primary_container">@*android:color/accent_device_default</color><!--add contact,dialer buttons-->
     <color name="primary_dark_material_dark">@android:color/black</color>
     <color name="primary_dark_material_light">@color/material_grey_600</color>
     <color name="primary_material_dark">@color/material_grey_900</color>
