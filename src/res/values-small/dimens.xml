@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cli_call_button_container_margin_top">61.0dip</dimen>
+    <dimen name="cli_call_button_container_width">90.0dip</dimen>
+    <dimen name="dialpad_bottom_space_height">0.0dip</dimen>
+    <dimen name="dialpad_digits_height">52.0dip</dimen>
+    <dimen name="dialpad_key_numbers_default_size">24.0sp</dimen>
+    <dimen name="dialpad_symbol_margin_bottom">0.0dip</dimen>
+    <dimen name="floating_action_button_margin_bottom">50.0dip</dimen>
+    <dimen name="incall_button_label_margin">0.0dip</dimen>
+    <dimen name="incall_window_margin_horizontal">12.0dip</dimen>
+    <dimen name="mtrl_alert_dialog_background_inset_bottom">24.0dip</dimen>
+    <dimen name="mtrl_alert_dialog_background_inset_top">24.0dip</dimen>
+    <dimen name="prc_bottom_nav_item_min_height">40.0dip</dimen>
+    <dimen name="prc_greeting_dialog_title_margin_bottom">5.0dip</dimen>
+    <dimen name="video_call_end_margin">0.0dip</dimen>
+    <dimen name="dialpad_key_margin_right">4.0dip</dimen>
+    <dimen name="dialpad_key_number_width">20.0sp</dimen>
+</resources>

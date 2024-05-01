@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    android:shape="rectangle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <size
+        android:height="@dimen/prc_dialpad_key_divider"
+        android:width="@dimen/prc_dialpad_key_divider" />
+    <solid
+        android:color="@android:color/transparent" />
+</shape>

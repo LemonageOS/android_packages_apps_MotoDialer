@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="letter_avatar_colors">
+        <item>#ffe0b6ff</item>
+        <item>#ffffb685</item>
+        <item>#ff7ed0ff</item>
+        <item>#fffcb2c8</item>
+        <item>#ff58dbc3</item>
+    </array>
+    <array name="letter_tile_colors">
+        <item>#ff4e4256</item>
+        <item>#ff5b4130</item>
+        <item>#ff374955</item>
+        <item>#ff5b3f47</item>
+        <item>#ff334c46</item>
+    </array>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="call_log_list_item_info_margin_start">0.0dip</dimen>
+    <dimen name="call_log_list_item_primary_action_dimen">40.0dip</dimen>
+    <dimen name="call_log_primary_action_button_margin_end">16.0dip</dimen>
+    <dimen name="contact_photo_size">0.0dip</dimen>
+</resources>

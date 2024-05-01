@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.incallui.answer.impl.AffordanceHolderLayout
+    android:id="@id/incoming_container"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:keepScreenOn="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextureView
+        android:id="@id/incoming_preview_texture_view"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:importantForAccessibility="no" />
+    <com.android.incallui.answer.impl.FixedAspectSurfaceView
+        android:id="@id/incoming_preview_surface_view"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:importantForAccessibility="no"
+        app:scaleHeight="@bool/scale_height"
+        app:scaleWidth="@bool/scale_width" />
+    <View
+        android:id="@id/incoming_preview_texture_view_overlay"
+        android:background="@color/videocall_overlay_background_color"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <FrameLayout
+        android:id="@id/answer_method_container"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <FrameLayout
+        android:fitsSystemWindows="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:textAppearance="@style/Dialer.Incall.TextAppearance"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/videocall_video_off"
+            android:padding="64.0dip"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/prc_ic_video_call_camera_off"
+            android:drawablePadding="8.0dip"
+            android:accessibilityTraversalBefore="@id/videocall_speaker_button" />
+        <include
+            android:id="@id/contactgrid_bottom_row"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/incall_window_margin_horizontal"
+            android:layout_marginEnd="@dimen/incall_window_margin_horizontal"
+            layout="@layout/incall_contactgrid_bottom_row" />
+        <LinearLayout
+            android:gravity="center|top"
+            android:orientation="vertical"
+            android:id="@id/incall_contact_grid"
+            android:focusable="true"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/incomingcall_window_margin_top">
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:id="@id/all_contact"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/incall_window_margin_top">
+                <FrameLayout
+                    android:id="@id/incall_data_container"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:layout_width="@dimen/incall_avatar_size"
+                    android:layout_height="@dimen/incall_avatar_size">
+                    <LinearLayout
+                        android:layout_gravity="bottom|center"
+                        android:orientation="horizontal"
+                        android:id="@id/incall_data_container_chip_container"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@id/contact_grid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <com.android.incallui.autoresizetext.AutoResizeTextView
+                        android:textAppearance="@style/Dialer.Incall.TextAppearance.Large"
+                        android:ellipsize="end"
+                        android:id="@id/contactgrid_contact_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/incoming_namerow_margin_bottom"
+                        android:singleLine="true"
+                        android:layout_marginStart="@dimen/incall_window_margin_horizontal"
+                        android:layout_marginEnd="@dimen/incall_window_margin_horizontal"
+                        app:autoResizeText_minTextSize="@dimen/incall_textappearance_large_size" />
+                    <include
+                        android:id="@id/contactgrid_top_row"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/incoming_toprow_margin_bottom"
+                        android:layout_marginStart="@dimen/incall_window_margin_horizontal"
+                        android:layout_marginEnd="@dimen/incall_window_margin_horizontal"
+                        layout="@layout/incall_contactgrid_top_row" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:textSize="14.0sp"
+                android:textStyle="bold"
+                android:textColor="?android:colorBackground"
+                android:gravity="center"
+                android:id="@id/incall_important_call_badge"
+                android:background="@drawable/urgent_call_background"
+                android:layout_width="wrap_content"
+                android:layout_height="48.0dip"
+                android:layout_marginTop="4.0dip"
+                android:layout_marginBottom="@dimen/answer_importance_margin_bottom"
+                android:text="@string/call_incoming_important"
+                android:maxLines="1"
+                android:textAllCaps="true"
+                android:elevation="@dimen/answer_data_elevation" />
+            <FrameLayout
+                android:id="@id/incall_location_holder"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/device_number_row" />
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_gravity="end|bottom|center"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <com.prc.voicemail.dialer.PrcDrawableInCenterButton
+                android:textAppearance="@style/Dialer.Incall.TextAppearance.Label"
+                android:textStyle="bold"
+                android:textColor="@color/prc_voicemail_button_text_color"
+                android:id="@id/incoming_secondary_button"
+                android:background="@color/prc_transparent"
+                android:paddingRight="@dimen/prc_voicemail_text_drawable_padding_left"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/prc_voicemail_button_height"
+                android:layout_marginTop="@dimen/end_call_button_margin_bottom"
+                android:minWidth="@dimen/prc_incoming_call_button_min_width"
+                android:drawableLeft="@drawable/quantum_ic_message_white_24"
+                android:drawablePadding="@dimen/prc_voicemail_text_drawable_padding"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:drawableTint="@color/prc_voicemail_button_text_color" />
+            <com.prc.voicemail.dialer.PrcDrawableInCenterButton
+                android:textAppearance="@style/Dialer.Incall.TextAppearance.Label"
+                android:textStyle="bold"
+                android:textColor="@color/prc_voicemail_button_text_color"
+                android:layout_gravity="center"
+                android:id="@id/voicemail"
+                android:background="@color/prc_transparent"
+                android:paddingLeft="@dimen/prc_voicemail_text_drawable_padding_left"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/prc_voicemail_button_height"
+                android:layout_marginTop="@dimen/end_call_button_margin_bottom"
+                android:minWidth="@dimen/prc_incoming_call_button_min_width"
+                android:drawableLeft="@drawable/ic_icon_voicemail"
+                android:drawablePadding="@dimen/prc_voicemail_text_drawable_padding"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableTint="@color/prc_voicemail_button_text_color" />
+        </RelativeLayout>
+        <com.android.incallui.answer.impl.affordance.SwipeButtonView
+            android:layout_gravity="end|bottom|center"
+            android:id="@id/incoming_secondary_button2"
+            android:layout_width="@dimen/incoming_swipe_button_size"
+            android:layout_height="@dimen/incoming_swipe_button_size"
+            android:layout_marginRight="@dimen/incall_window_margin_horizontal"
+            android:layout_marginBottom="@dimen/incall_window_margin_horizontal"
+            android:src="@drawable/prc_ic_end_answer"
+            android:layout_alignParentRight="true" />
+    </LinearLayout>
+</com.android.incallui.answer.impl.AffordanceHolderLayout>

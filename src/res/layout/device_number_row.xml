@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <View
+        android:layout_gravity="bottom"
+        android:id="@id/contactgrid_location_divider"
+        android:background="#ffd8d8d8"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+    <TextView
+        android:textSize="16.0sp"
+        android:textColor="@color/prc_incall_grid_text_color"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@id/contactgrid_device_number_text"
+        android:paddingTop="16.0dip"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:elevation="2.0dip" />
+    <Button
+        android:textSize="16.0sp"
+        android:textStyle="bold"
+        android:textColor="@color/prc_incall_grid_text_color"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@id/open_emergency_platform"
+        android:background="@drawable/prc_ripple_shape_voice_white_28"
+        android:paddingLeft="23.0dip"
+        android:paddingTop="12.0dip"
+        android:paddingRight="23.0dip"
+        android:paddingBottom="12.0dip"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16.0dip"
+        android:text="@string/prc_emergency_send_to_police_btn_content"
+        android:elevation="2.0dip" />
+    <TextView
+        android:textSize="14.0sp"
+        android:textColor="@color/prc_incall_grid_text_color"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@id/emergency_platform_tag"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16.0dip"
+        android:elevation="2.0dip" />
+</merge>

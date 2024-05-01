@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:fitsSystemWindows="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        layout="@layout/collapsing_action_bar_layout" />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/prc_alarm_text_margin_top"
+                android:text="@string/prc_emergency_platform_tips"
+                android:paddingStart="@dimen/prc_alarm_text_margin"
+                android:paddingEnd="@dimen/prc_alarm_text_margin"
+                style="@style/Prc_Voicemail_Guide_Content" />
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="@dimen/prc_voicemail_tips_img_height"
+                android:layout_height="@dimen/prc_voicemail_tips_img_height"
+                android:layout_marginTop="@dimen/prc_alarm_text_margin"
+                android:layout_marginBottom="@dimen/prc_alarm_image_margin_bottom"
+                android:src="@drawable/prc_ic_alarm_assistance" />
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/prc_alarm_text_margin_top"
+                android:paddingStart="@dimen/prc_alarm_text_margin"
+                android:paddingEnd="@dimen/prc_alarm_text_margin">
+                <TextView
+                    android:textSize="@dimen/prc_alarm_label_text_size"
+                    android:textColor="@color/prc_text_primary_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prc_emergency_platform_lable"
+                    android:layout_toLeftOf="@id/platform_switch"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingEnd="@dimen/prc_alarm_text_margin" />
+                <Switch
+                    android:id="@id/platform_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="@dimen/prc_alarm_text_margin_bottom">
+                <com.android.internal.widget.PreferenceImageView
+                    android:id="@id/icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/prc_greeting_add_image_margin"
+                    android:layout_marginTop="@dimen/prc_greeting_add_image_margin"
+                    android:src="@drawable/prc_ic_voicemail_tips_info"
+                    android:tint="@color/prc_record_greeting_dialog_close_color" />
+                <TextView
+                    android:ellipsize="end"
+                    android:layout_gravity="center_vertical"
+                    android:id="@id/summary"
+                    android:paddingLeft="@dimen/prc_greeting_add_image_margin"
+                    android:paddingRight="@dimen/prc_greeting_add_image_margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/prc_greeting_add_text_margin_left"
+                    android:layout_marginBottom="@dimen/prc_greeting_add_text_margin_left"
+                    android:text="@string/prc_emergency_platform_switch_tips"
+                    style="@style/Prc_Voicemail_Guide_Content_Secondary" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

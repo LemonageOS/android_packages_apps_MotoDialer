@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners
+        android:radius="30.0dip" />
+    <solid
+        android:color="@color/cli_dialpad_click_color" />
+    <padding
+        android:left="12.0dip"
+        android:right="12.0dip" />
+</shape>

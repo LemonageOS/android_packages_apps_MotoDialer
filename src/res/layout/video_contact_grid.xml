@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/incall_window_margin_top"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@id/contactgrid_avatar"
+        android:visibility="gone"
+        android:layout_width="@dimen/incall_avatar_size"
+        android:layout_height="@dimen/incall_avatar_size" />
+    <com.android.incallui.autoresizetext.AutoResizeTextView
+        android:textAppearance="@style/Dialer.Incall.TextAppearance.Large"
+        android:ellipsize="end"
+        android:id="@id/contactgrid_contact_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/incall_namerow_margin_top"
+        android:singleLine="true"
+        android:includeFontPadding="false"
+        app:autoResizeText_minTextSize="@dimen/incall_textappearance_large_size" />
+    <include
+        android:id="@id/contactgrid_top_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/incall_namerow_margin_bottom"
+        layout="@layout/incall_contactgrid_top_row" />
+    <include
+        android:id="@id/contactgrid_bottom_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/incall_bottom_margin_top"
+        layout="@layout/incall_contactgrid_bottom_row" />
+</LinearLayout>

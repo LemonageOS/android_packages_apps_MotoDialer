@@ -1,0 +1,1220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    coreApp="true"
+    package="com.android.dialer"
+    platformBuildVersionCode="31"
+    platformBuildVersionName="12"
+    android:compileSdkVersion="31"
+    android:compileSdkVersionCodename="12"
+    xmlns:androidprv="http://schemas.android.com/apk/prv/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Allows the app to call phone numbers without your intervention. This may result in unexpected charges or calls. Note that this doesn't allow the app to call emergency numbers. Malicious apps may cost you money by making calls without your confirmation. -->
+    <uses-permission
+        android:name="android.permission.CALL_PHONE" />
+    <!-- Allows the app to read data about your contacts stored on your phone. Apps will also have access to the accounts on your phone that have created contacts. This may include accounts created by apps you have installed. This permission allows apps to save your contact data, and malicious apps may share contact data without your knowledge. -->
+    <uses-permission
+        android:name="android.permission.READ_CONTACTS" />
+    <!-- Allows the app to modify the data about your contacts stored on your phone. This permission allows apps to delete contact data. -->
+    <uses-permission
+        android:name="android.permission.WRITE_CONTACTS" />
+    <!-- This app can read your call history. -->
+    <uses-permission
+        android:name="android.permission.READ_CALL_LOG" />
+    <!-- Allows the app to modify your phone's call log, including data about incoming and outgoing calls. Malicious apps may use this to erase or modify your call log. -->
+    <uses-permission
+        android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission
+        android:name="android.permission.READ_PROFILE" />
+    <uses-permission
+        android:name="android.permission.MANAGE_ACCOUNTS" />
+    <!-- Allows the app to get the list of accounts known by the phone. This may include any accounts created by applications you have installed. -->
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS_PRIVILEGED" />
+    <!-- This app can get your precise location from location services while the app is in use. Location services for your device must be turned on for the app to get location. This may increase battery usage. -->
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- This app can get your approximate location from location services while the app is in use. Location services for your device must be turned on for the app to get location. -->
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- Allows the app to create network sockets and use custom network protocols. The browser and other applications provide means to send data to the internet, so this permission is not required to send data to the internet. -->
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+    <!-- Allows the app to see the number being dialed during an outgoing call with the option to redirect the call to a different number or abort the call altogether. -->
+    <uses-permission
+        android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <!-- Allows the app to communicate with Near Field Communication (NFC) tags, cards, and readers. -->
+    <uses-permission
+        android:name="android.permission.NFC" />
+    <!-- Allows the app to access the phone features of the device. This permission allows the app to determine the phone number and device IDs, whether a call is active, and the remote number connected by a call. -->
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+    <!-- Allows the app to modify global audio settings such as volume and which speaker is used for output. -->
+    <uses-permission
+        android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission
+        android:name="android.permission.MODIFY_PHONE_STATE" />
+    <!-- Allows the app to prevent the phone from going to sleep. -->
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+    <!-- Allows the app to write the contents of your shared storage. -->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- Allows the app to modify the system's settings data. Malicious apps may corrupt your system's configuration. -->
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission
+        android:name="android.permission.USE_CREDENTIALS" />
+    <!-- Allows the app to control the vibrator. -->
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+    <!-- Allows the app to view the configuration of the Bluetooth on the phone, and to make and accept connections with paired devices. -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_CONNECT" />
+    <!-- Allows the app to read the sync settings for an account. For example, this can determine whether the People app is synced with an account. -->
+    <uses-permission
+        android:name="android.permission.READ_SYNC_SETTINGS" />
+    <!-- Allows the app to add messages to your voicemail inbox. -->
+    <uses-permission
+        android:name="com.android.voicemail.permission.ADD_VOICEMAIL" />
+    <uses-permission
+        android:name="com.android.voicemail.permission.WRITE_VOICEMAIL" />
+    <uses-permission
+        android:name="com.android.voicemail.permission.READ_VOICEMAIL" />
+    <uses-permission
+        android:name="android.permission.ALLOW_ANY_CODEC_FOR_PLAYBACK" />
+    <!-- Allows an application to add Homescreen shortcuts without user intervention. -->
+    <uses-permission
+        android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <!-- Allows the app to have itself started as soon as the system has finished booting. This can make it take longer to start the phone and allow the app to slow down the overall phone by always running. -->
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- Allows the app to send sticky broadcasts, which remain after the broadcast ends. Excessive use may make the phone slow or unstable by causing it to use too much memory. -->
+    <uses-permission
+        android:name="android.permission.BROADCAST_STICKY" />
+    <!-- Allows the app to view information about Wi-Fi networking, such as whether Wi-Fi is enabled and name of connected Wi-Fi devices. -->
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- Allows the app to send SMS messages. This may result in unexpected charges. Malicious apps may cost you money by sending messages without your confirmation. -->
+    <uses-permission
+        android:name="android.permission.SEND_SMS" />
+    <!-- This app can appear on top of other apps or other parts of the screen. This may interfere with normal app usage and change the way that other apps appear. -->
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission
+        android:name="android.permission.CONNECTIVITY_USE_RESTRICTED_NETWORKS" />
+    <uses-permission
+        android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.QUERY_ALL_PACKAGES" />
+    <uses-permission
+        android:name="android.permission.CONTROL_INCALL_EXPERIENCE" />
+    <uses-permission
+        android:name="android.permission.STATUS_BAR" />
+    <!-- This app can take pictures and record videos using the camera at any time. -->
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.STOP_APP_SWITCHES" />
+    <uses-permission
+        android:name="com.sec.android.provider.badge.permission.READ" />
+    <uses-permission
+        android:name="com.sec.android.provider.badge.permission.WRITE" />
+    <uses-permission
+        android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission
+        android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+    <uses-permission
+        android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+    <uses-permission
+        android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" />
+    <uses-permission
+        android:name="com.anddoes.launcher.permission.UPDATE_COUNT" />
+    <uses-permission
+        android:name="com.majeur.launcher.permission.UPDATE_BADGE" />
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission
+        android:name="android.permission.READ_APP_BADGE" />
+    <uses-permission
+        android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+    <uses-permission
+        android:name="com.oppo.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission
+        android:name="com.summit.nexos.permission.CAPS" />
+    <uses-permission
+        android:name="com.summit.nexos.permission.MESSAGING" />
+    <uses-permission
+        android:name="com.motorola.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission
+        android:name="com.motorola.android.permission.USERPREFERREDSIM" />
+    <uses-permission
+        android:name="com.android.rcs.eab.permission.READ_WRITE_EAB" />
+    <uses-permission
+        android:name="com.cequint.ecid.CALLER_ID_LOOKUP" />
+    <uses-permission
+        android:name="com.motorola.incallui.permission.INCOMING_CALL_VISIBILITY_CHANGED" />
+    <!-- Allows the app to make use of foreground services. -->
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE" />
+    <!-- Allows the app to access the phone numbers of the device. -->
+    <uses-permission
+        android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="false" />
+    <uses-permission
+        android:name="com.motorola.coreapps.permission.INTERACTION" />
+    <permission
+        android:name="com.motorola.coreapps.permission.DEBUG"
+        android:protectionLevel="signatureOrSystem" />
+    <!-- Allows the app to configure the local Bluetooth phone, and to discover and pair with remote devices. -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission
+        android:name="com.motorola.hardware.ACCESS_CLI" />
+    <uses-permission
+        android:name="com.motorola.moto.provider.permission.READ_MODES" />
+    <!-- Allows the app to change the state of network connectivity. -->
+    <uses-permission
+        android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- Allows the app to view information about network connections such as which networks exist and are connected. -->
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- This app can record audio using the microphone at any time. -->
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission
+        android:name="com.qualcomm.qti.permission.USE_UIM_GBA_SERVICE" />
+    <uses-permission
+        android:name="com.motorola.carrierconfig.READ_CONFIG_FILE" />
+    <uses-permission
+        android:name="android.permission.CAPTURE_AUDIO_OUTPUT" />
+    <uses-permission
+        android:name="com.motorola.gamemode.permission.LAUNCH_GAMEMODE" />
+    <uses-permission
+        android:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS" />
+    <uses-permission
+        android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission
+        android:name="com.android.dialer.permission.DIALER_ORIGIN"
+        android:protectionLevel="signature" />
+    <uses-permission
+        android:name="android.permission.INTERACT_ACROSS_USERS" />
+    <uses-permission
+        android:name="com.prc.dialer.privacy" />
+    <permission
+        android:label="@string/antispam_classify_activity_permission"
+        android:name="com.android.dialer.permission.ANTISPAM"
+        android:protectionLevel="signatureOrSystem"
+        android:description="@string/antispam_classify_activity_permission" />
+    <permission
+        android:name="com.prc.provider.permission.CONTACTS_BLOCK_NUMBER"
+        android:protectionLevel="signatureOrSystem" />
+    <permission
+        android:name="com.prc.provider.permission.CONTACTS_QUERY_CALLLOG"
+        android:protectionLevel="signatureOrSystem" />
+    <permission
+        android:name="com.prc.dialer.privacy"
+        android:protectionLevel="signatureOrSystem" />
+    <uses-permission
+        android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+    <uses-permission
+        android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.screen.landscape"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+    <application
+        android:label="@string/applicationLabel"
+        android:icon="@mipmap/ic_launcher_phone"
+        android:name="com.android.dialer.binary.aosp.AospDialerApplication"
+        android:hardwareAccelerated="true"
+        android:supportsRtl="true"
+        android:extractNativeLibs="false"
+        android:usesCleartextTraffic="false"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        <uses-library
+            android:name="ims-ext-common"
+            android:required="false" />
+        <uses-library
+            android:name="moto-settings"
+            android:required="false" />
+        <service
+            android:name="com.prc.calllog.privacy.SyncPrivacyContactService"
+            android:permission="com.prc.dialer.privacy"
+            android:exported="true" />
+        <service
+            android:name="com.prc.calllog.privacy.TransferCallLogService"
+            android:permission="com.prc.dialer.privacy"
+            android:exported="true" />
+        <provider
+            android:name="com.prc.calllog.privacy.provider.PrivacySpaceContactProvider"
+            android:permission="com.prc.dialer.privacy"
+            android:exported="true"
+            android:authorities="com.contact.privacycontact" />
+        <activity
+            android:theme="@style/SettingsStyle.DayNight"
+            android:label="@string/recording_list_lable"
+            android:name="com.android.dialer.app.prcrecording.recordlist.PrcRecordingListActivity"
+            android:exported="false" />
+        <provider
+            android:name="com.android.dialer.app.prcrecording.provider.PrcCallRecordProvider"
+            android:permission="android.permission.READ_CONTACTS"
+            android:exported="true"
+            android:multiprocess="false"
+            android:authorities="com.android.dialer.app.prcrecording.provider.PrcCallRecordProvider"
+            android:syncable="false" />
+        <activity
+            android:theme="@style/PrcSettingTheme"
+            android:label="@string/auto_record_setting_title"
+            android:name="com.android.dialer.app.prcrecording.PrcCallRecordSettingsActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:theme="@style/Transparent"
+            android:name="com.android.dialer.PrcSearchActivity"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustPan" />
+        <activity
+            android:theme="@style/Theme.CallSubjectDialogTheme"
+            android:name="com.android.contacts.common.dialog.CallSubjectDialog"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateVisible">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/Dialer.DayNight.ThemeBase"
+            android:label="@string/licenseActivityLabel"
+            android:name="com.android.dialer.about.LicenseMenuActivity"
+            android:exported="true" />
+        <activity
+            android:theme="@style/Dialer.DayNight.ThemeBase"
+            android:label="@string/licenseActivityLabel"
+            android:name="com.android.dialer.about.LicenseActivity"
+            android:exported="false" />
+        <activity
+            android:theme="@style/SettingsStyle.DayNight"
+            android:label="@string/dialer_settings_label"
+            android:name="com.android.dialer.app.settings.DialerSettingsActivity"
+            android:exported="false"
+            android:parentActivityName="com.android.dialer.main.impl.MainActivity">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:scheme="header" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/ManageBlockedNumbersStyle"
+            android:label="@string/manage_blocked_numbers_label"
+            android:name="com.android.dialer.app.filterednumber.BlockedNumbersSettingsActivity"
+            android:exported="false"
+            android:parentActivityName="com.android.dialer.app.settings.DialerSettingsActivity">
+            <intent-filter>
+                <action
+                    android:name="com.android.dialer.action.BLOCKED_NUMBERS_SETTINGS" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/PrcSettingTheme"
+            android:label="@string/antispam_harass_activity_title"
+            android:name="com.android.dialer.app.settings.PrcAntiSpamCallClassifyActivity"
+            android:permission="com.android.dialer.permission.ANTISPAM"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="com.android.dialer.action.SPAM_BLOACK_CALL" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/Dialer.DayNight.ThemeBase.ActionBar"
+            android:label="@string/call_log_activity_title"
+            android:name="com.android.dialer.app.calllog.CallLogActivity" />
+        <activity
+            android:theme="@style/ConversationHistoryCallDetailsActivityStyle"
+            android:name="com.motorola.dialer.app.conversationhistorycalldetails.ConversationHistoryCallDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:theme="@style/ConversationHistoryCallDetailsActivityStyle"
+            android:name="com.motorola.dialer.app.conversationhistorycalldetails.ExtendedConversationHistoryCallDetailsActivity"
+            android:exported="true" />
+        <receiver
+            android:name="com.android.dialer.app.calllog.CallLogReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.NEW_VOICEMAIL" />
+                <data
+                    android:mimeType="vnd.android.cursor.item/voicemail"
+                    android:scheme="content"
+                    android:host="com.android.voicemail" />
+                <data
+                    android:mimeType="vnd.android.cursor.dir/voicemails"
+                    android:scheme="content"
+                    android:host="com.android.voicemail" />
+            </intent-filter>
+            <intent-filter
+                android:priority="100">
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:theme="@style/Theme.AppCompat.Translucent"
+            android:name="com.android.dialer.app.calllog.CallLogNotificationsActivity"
+            android:launchMode="singleInstance" />
+        <service
+            android:name="com.android.dialer.app.calllog.CallLogNotificationsService"
+            android:exported="false"
+            android:directBootAware="true" />
+        <service
+            android:name="com.android.dialer.app.calllog.VoicemailNotificationJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <receiver
+            android:name="com.android.dialer.app.calllog.MissedCallNotificationReceiver"
+            android:exported="true"
+            android:directBootAware="true">
+            <intent-filter>
+                <action
+                    android:name="android.telecom.action.SHOW_MISSED_CALLS_NOTIFICATION" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.android.dialer.app.voicemail.LegacyVoicemailNotificationReceiver"
+            android:permission="com.android.voicemail.permission.WRITE_VOICEMAIL"
+            android:exported="false"
+            android:directBootAware="true">
+            <intent-filter>
+                <action
+                    android:name="android.telephony.action.SHOW_VOICEMAIL_NOTIFICATION" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="com.android.voicemail.VoicemailClient.ACTION_SHOW_LEGACY_VOICEMAIL" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.android.dialer.app.LocaleReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.LOCALE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.motorola.dialer.theme.ThemeMigratoryReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.android.dialer.commandline.CommandLineReceiver"
+            android:exported="false" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.android.dialer.files"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <meta-data
+            android:name="supports_per_number_preferred_account"
+            android:value="true" />
+        <activity
+            android:theme="@style/SettingsStyle.DayNight"
+            android:label="@string/assisted_dialing_setting_title"
+            android:name="com.android.dialer.assisteddialing.ui.AssistedDialingSettingActivity"
+            android:exported="false"
+            android:parentActivityName="com.android.dialer.app.settings.DialerSettingsActivity">
+            <intent-filter>
+                <action
+                    android:name="com.android.dialer.app.settings.SHOW_ASSISTED_DIALING_SETTINGS" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="com.google.android.backup.api_key"
+            android:value="AEdPqrEAAAAIn3-Y3JKit1mrzfvcdbVhUiJn2ICtKfhGYLy0Bg" />
+        <provider
+            android:name="com.android.dialer.blocking.FilteredNumberProvider"
+            android:exported="false"
+            android:multiprocess="false"
+            android:authorities="com.android.dialer.blocking.filterednumberprovider" />
+        <provider
+            android:name="com.prc.provider.BlockNumberProxyProvider"
+            android:permission="com.prc.provider.permission.CONTACTS_BLOCK_NUMBER"
+            android:exported="true"
+            android:multiprocess="false"
+            android:authorities="com.prc.provider.BlockNumberProxyProvider" />
+        <provider
+            android:name="com.prc.provider.CalllogProxyProvider"
+            android:permission="com.prc.provider.permission.CONTACTS_QUERY_CALLLOG"
+            android:exported="true"
+            android:multiprocess="false"
+            android:authorities="com.prc.provider.CalllogProxyProvider" />
+        <activity
+            android:theme="@style/Theme.AppCompat.CallComposer"
+            android:name="com.android.dialer.callcomposer.CallComposerActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:theme="@style/Dialer.DayNight.ThemeBase.NoActionBar"
+            android:label="@string/call_details"
+            android:name="com.android.dialer.calldetails.OldCallDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:theme="@style/Dialer.DayNight.ThemeBase.NoActionBar"
+            android:label="@string/call_details"
+            android:name="com.android.dialer.calldetails.CallDetailsActivity"
+            android:exported="false" />
+        <service
+            android:name="com.android.dialer.calllog.config.CallLogConfigImpl$PollingJob"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+        <provider
+            android:name="com.android.dialer.calllog.database.AnnotatedCallLogContentProvider"
+            android:exported="false"
+            android:multiprocess="false"
+            android:authorities="com.android.dialer.annotatedcalllog" />
+        <service
+            android:name="com.android.dialer.calllog.CallLogConfig$PollingJob"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+        <service
+            android:name="com.android.dialer.configprovider.SharedPrefConfigProvider$Service" />
+        <activity
+            android:label="@string/enriched_call_simulator_activity"
+            android:name="com.android.dialer.enrichedcall.simulator.EnrichedCallSimulatorActivity" />
+        <service
+            android:name="com.android.dialer.interactions.ContactUpdateService"
+            android:exported="false" />
+        <receiver
+            android:name="com.android.dialer.interactions.UndemoteOutgoingCallReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.android.dialer.location.CountryDetector$LocationChangedReceiver" />
+        <activity
+            android:theme="@style/MainActivityTheme.DayNight"
+            android:label="@string/main_activity_label"
+            android:name="com.android.dialer.main.impl.MainActivity"
+            android:exported="true"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"
+            android:resizeableActivity="true"
+            android:directBootAware="true">
+            <intent-filter>
+                <action
+                    android:name="com.android.dialer.main.impl.MAIN" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.DIAL" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:mimeType="vnd.android.cursor.item/phone" />
+                <data
+                    android:mimeType="vnd.android.cursor.item/person" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.DIAL" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="voicemail" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.DIAL" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <action
+                    android:name="android.intent.action.DIAL" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="tel" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:mimeType="vnd.android.cursor.dir/calls" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.CALL_BUTTON" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="com.android.phone.action.TOUCH_DIALER" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <category
+                    android:name="android.intent.category.TAB" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="com.android.phone.action.RECENT_CALLS" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <category
+                    android:name="android.intent.category.TAB" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.keyguard.layout"
+                android:resource="@layout/keyguard_preview" />
+        </activity>
+        <activity-alias
+            android:name="com.android.dialer.DialtactsActivity"
+            android:exported="true"
+            android:targetActivity="com.android.dialer.main.impl.MainActivity" />
+        <activity-alias
+            android:name="com.android.dialer.app.DialtactsActivity"
+            android:exported="true"
+            android:targetActivity="com.android.dialer.main.impl.MainActivity" />
+        <provider
+            android:name="com.android.dialer.phonelookup.database.PhoneLookupHistoryContentProvider"
+            android:exported="false"
+            android:multiprocess="false"
+            android:authorities="com.android.dialer.phonelookuphistory" />
+        <activity
+            android:theme="@style/Theme.AppCompat.Light"
+            android:name="com.android.dialer.postcall.PostCallActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:theme="@style/Theme.PreCall.DialogHolder"
+            android:name="com.android.dialer.precall.externalreceiver.LaunchPreCallActivity"
+            android:permission="android.permission.CALL_PHONE"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:noHistory="true">
+            <intent-filter>
+                <action
+                    android:name="com.android.dialer.LAUNCH_PRE_CALL" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:scheme="tel" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="com.android.dialer.LAUNCH_PRE_CALL" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:scheme="voicemail" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/Theme.PreCall.DialogHolderDayNight"
+            android:name="com.android.dialer.precall.impl.PreCallActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:noHistory="true" />
+        <provider
+            android:name="com.android.dialer.preferredsim.impl.PreferredSimFallbackProvider"
+            android:readPermission="android.permission.READ_CONTACTS"
+            android:writePermission="android.permission.WRITE_CONTACTS"
+            android:exported="true"
+            android:multiprocess="false"
+            android:authorities="com.android.dialer.preferredsimfallback" />
+        <meta-data
+            android:name="com.android.dialer.SUPPORTS_PREFERRED_SIM"
+            android:value="true" />
+        <meta-data
+            android:name="com.android.dialer.PREFERRED_SIM_FALLBACK_AUTHORITY"
+            android:value="com.android.dialer.preferredsimfallback" />
+        <activity
+            android:theme="@style/MainActivityTheme.DayNight"
+            android:name="com.android.dialer.rtt.RttTranscriptActivity" />
+        <receiver
+            android:name="com.android.dialer.rtt.RttTranscriptUtil$RttTranscriptReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:theme="@style/MainActivityTheme.DayNight"
+            android:name="com.motorola.dialer.rtt.ExtendedRttTranscriptActivity" />
+        <service
+            android:name="com.android.dialer.shortcuts.PeriodicJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+        <activity
+            android:theme="@style/CallContactsTheme"
+            android:label=""
+            android:name="com.android.dialer.shortcuts.CallContactActivity"
+            android:exported="false"
+            android:taskAffinity=""
+            android:excludeFromRecents="true"
+            android:noHistory="true" />
+        <service
+            android:name="com.android.dialer.simulator.impl.SimulatorConnectionService"
+            android:permission="android.permission.BIND_CONNECTION_SERVICE"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="android.telecomm.ConnectionService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.android.incallui.PrcSpamCallScreenService"
+            android:permission="android.permission.BIND_SCREENING_SERVICE"
+            android:exported="false">
+            <intent-filter>
+                <action
+                    android:name="android.telecom.CallScreeningService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.android.dialer.simulator.service.SimulatorService"
+            android:exported="true" />
+        <activity
+            android:theme="@style/SettingsStyle.DayNight"
+            android:label="@string/voicemail_change_pin_preference_title"
+            android:name="com.android.dialer.voicemail.settings.VoicemailChangePinActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateVisible"
+            android:parentActivityName="com.android.dialer.app.settings.DialerSettingsActivity" />
+        <activity
+            android:theme="@style/SettingsStyle.DayNight"
+            android:label="@string/voicemail_change_greeting_preference_title"
+            android:name="com.android.dialer.voicemail.settings.RecordVoicemailGreetingActivity"
+            android:exported="false"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:parentActivityName="com.android.dialer.app.settings.DialerSettingsActivity" />
+        <activity
+            android:label="@string/voicemail_change_greeting_preference_title"
+            android:name="com.android.dialer.voicemail.settings.CurrentVoicemailGreetingActivity"
+            android:exported="true"
+            android:parentActivityName="com.android.dialer.app.settings.DialerSettingsActivity" />
+        <receiver
+            android:name="com.android.incallui.answer.impl.hint.PawSecretCodeListener"
+            android:exported="false">
+            <intent-filter>
+                <action
+                    android:name="android.provider.Telephony.SECRET_CODE" />
+                <data
+                    android:scheme="android_secret_code" />
+            </intent-filter>
+        </receiver>
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <activity
+            android:theme="@style/Theme.InCallScreen"
+            android:label="@string/phoneAppLabel"
+            android:name="com.android.incallui.callpending.CallPendingActivity"
+            android:exported="false"
+            android:taskAffinity="com.android.incallui"
+            android:excludeFromRecents="true"
+            android:screenOrientation="nosensor"
+            android:resizeableActivity="true"
+            android:directBootAware="true" />
+        <activity
+            android:theme="@style/AfterCallNotificationTheme"
+            android:name="com.android.incallui.spam.SpamNotificationActivity"
+            android:exported="false"
+            android:taskAffinity=""
+            android:excludeFromRecents="true"
+            android:noHistory="true" />
+        <service
+            android:name="com.android.incallui.spam.SpamNotificationService"
+            android:exported="false" />
+        <activity
+            android:theme="@style/Theme.Incall.DialogHolder"
+            android:name="com.android.incallui.telecomeventui.InternationalCallOnWifiDialogActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:noHistory="true" />
+        <activity
+            android:theme="@style/Theme.InCallScreen.DayNight"
+            android:label="@string/phoneAppLabel"
+            android:name="com.android.incallui.InCallActivity"
+            android:exported="false"
+            android:taskAffinity="com.android.incallui"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="adjustResize"
+            android:hardwareAccelerated="true"
+            android:resizeableActivity="true"
+            android:directBootAware="true">
+            <meta-data
+                android:name="motorola.support_cli"
+                android:value="true" />
+        </activity>
+        <activity
+            android:theme="@style/Theme.InCallScreen.ManageConference.DayNight"
+            android:label="@string/manageConferenceLabel"
+            android:name="com.android.incallui.ManageConferenceActivity"
+            android:exported="false"
+            android:taskAffinity="com.android.incallui"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:resizeableActivity="true"
+            android:directBootAware="true" />
+        <service
+            android:name="com.android.incallui.InCallServiceImpl"
+            android:permission="android.permission.BIND_INCALL_SERVICE"
+            android:exported="true"
+            android:directBootAware="true">
+            <meta-data
+                android:name="android.telecom.IN_CALL_SERVICE_UI"
+                android:value="true" />
+            <meta-data
+                android:name="android.telecom.IN_CALL_SERVICE_RINGING"
+                android:value="false" />
+            <meta-data
+                android:name="android.telecom.INCLUDE_EXTERNAL_CALLS"
+                android:value="true" />
+            <intent-filter>
+                <action
+                    android:name="android.telecom.InCallService" />
+            </intent-filter>
+        </service>
+        <activity
+            android:theme="@style/Theme.Incall.DialogHolder"
+            android:name="com.android.incallui.AudioRouteSelectorActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:noHistory="true" />
+        <activity
+            android:theme="@style/Theme.Incall.DialogHolder"
+            android:name="com.android.incallui.PostCharDialogActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:noHistory="true" />
+        <receiver
+            android:name="com.android.incallui.NotificationBroadcastReceiver"
+            android:exported="false"
+            android:directBootAware="true" />
+        <receiver
+            android:name="com.android.incallui.ReturnToCallActionReceiver"
+            android:exported="false" />
+        <receiver
+            android:name="com.motorola.incallui.DebugInCallReceiver"
+            android:permission="com.motorola.coreapps.permission.DEBUG"
+            android:exported="false">
+            <intent-filter>
+                <action
+                    android:name="com.motorola.coreapps.DEBUG" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:theme="@style/AlertDialogThemeDayNight"
+            android:name="com.motorola.incallui.WifiCoverageWarningActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" />
+        <activity
+            android:theme="@style/AlertDialogThemeDayNight"
+            android:name="com.motorola.phone.common.RttUiDialogFragmentActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance" />
+        <activity
+            android:theme="@style/AlertDialogThemeDayNight"
+            android:name="com.motorola.incallui.att.rtt.impl.AttRttEndCallDialog"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance" />
+        <activity
+            android:theme="@style/Theme.BrandLogo"
+            android:name="com.motorola.incallui.BrandLogoActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="nosensor"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"
+            android:hardwareAccelerated="true"
+            android:directBootAware="true" />
+        <receiver
+            android:name="com.motorola.incallui.MotoCallingFdn$CallingFdnReceiver"
+            android:exported="false" />
+        <activity
+            android:theme="@style/AlertDialogThemeDayNight"
+            android:name="com.motorola.incallui.WiFiLteHandoverDialogActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" />
+        <activity
+            android:name="com.android.voicemail.impl.configui.VoicemailSecretCodeActivity"
+            android:exported="false" />
+        <receiver
+            android:name="com.android.voicemail.impl.sms.OmtpMessageReceiver"
+            android:exported="false"
+            android:directBootAware="true">
+            <intent-filter>
+                <action
+                    android:name="com.android.vociemailomtp.sms.sms_received" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.android.voicemail.impl.VoicemailClientReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action
+                    android:name="com.android.voicemail.VoicemailClient.ACTION_UPLOAD" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.android.voicemail.impl.fetch.FetchVoicemailReceiver"
+            android:permission="com.android.voicemail.permission.READ_VOICEMAIL"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.FETCH_VOICEMAIL" />
+                <data
+                    android:mimeType="vnd.android.cursor.item/voicemail"
+                    android:scheme="content"
+                    android:host="com.android.voicemail" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.android.voicemail.impl.sync.OmtpVvmSyncReceiver"
+            android:permission="com.android.voicemail.permission.READ_VOICEMAIL"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="android.provider.action.SYNC_VOICEMAIL" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.android.voicemail.impl.sync.VoicemailProviderChangeReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.PROVIDER_CHANGED" />
+                <data
+                    android:mimeType="vnd.android.cursor.dir/voicemails"
+                    android:scheme="content"
+                    android:host="com.android.voicemail" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.android.voicemail.impl.scheduling.TaskReceiver"
+            android:exported="false" />
+        <service
+            android:name="com.android.voicemail.impl.scheduling.TaskSchedulerJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+        <service
+            android:name="com.android.voicemail.impl.StatusCheckJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+        <service
+            android:name="com.android.voicemail.impl.DeviceProvisionedJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+        <service
+            android:name="com.android.voicemail.impl.transcribe.TranscriptionService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+        <service
+            android:name="com.android.voicemail.impl.transcribe.TranscriptionBackfillService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+        <service
+            android:name="com.android.voicemail.impl.transcribe.TranscriptionRatingService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+        <service
+            android:name="com.android.voicemail.impl.OmtpService"
+            android:permission="android.permission.BIND_VISUAL_VOICEMAIL_SERVICE"
+            android:exported="true"
+            android:directBootAware="true">
+            <intent-filter>
+                <action
+                    android:name="android.telephony.VisualVoicemailService" />
+            </intent-filter>
+        </service>
+        <activity
+            android:name="com.android.voicemail.impl.settings.VoicemailChangePinActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateVisible" />
+        <receiver
+            android:name="com.motorola.voicemail.impl.CarrierVvmPackageUpdatedReceiver"
+            android:permission="android.permission.BIND_VISUAL_VOICEMAIL_SERVICE"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="com.android.internal.telephony.CARRIER_VVM_PACKAGE_INSTALLED" />
+                <action
+                    android:name="com.android.internal.telephony.CARRIER_VVM_PACKAGE_CHANGED" />
+                <action
+                    android:name="com.android.internal.telephony.CARRIER_VVM_PACKAGE_REMOVED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.android.voicemail.impl.transcribe.GetTranscriptReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action
+                    android:name="com.android.voicemail.impl.transcribe.GetTranscriptReceiver.POLL_ALARM" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.android.voicemail.VoicemailSecretCodeReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="android.provider.Telephony.SECRET_CODE" />
+                <data
+                    android:scheme="android_secret_code" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.android.voicemail.VoicemailPowerCycleReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+                <action
+                    android:name="android.intent.action.ACTION_SHUTDOWN" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:theme="@style/Dialer.DayNight.ThemeBase.NoActionBar"
+            android:label="@string/call_details"
+            android:name="com.motorola.dialer.calldetails.ExtendedOldCallDetailsActivity"
+            android:exported="false" />
+        <service
+            android:name="com.motorola.gbaservice.MotoGbaService"
+            android:permission="com.qualcomm.qti.permission.USE_UIM_GBA_SERVICE"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="com.motorola.gba.ACTION_MOTO_GBA_SERVICE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.motorola.incallui.checkin.SmartSimCheckinJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="false"
+            android:exported="true" />
+        <receiver
+            android:name="com.motorola.incallui.checkin.SmartSimEventsReceiver"
+            android:permission="com.motorola.android.permission.USERPREFERREDSIM"
+            android:enabled="false"
+            android:exported="false"
+            androidprv:systemUserOnly="true">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.motorola.incallui.checkin.SmartSimPreBootReceiver"
+            android:exported="true"
+            androidprv:systemUserOnly="true">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.PRE_BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <provider
+            android:name="com.motorola.voicemail.impl.tmo.TmoGreetingProvider"
+            android:exported="false"
+            android:authorities="com.motorola.voicemail.impl.tmo" />
+        <service
+            android:name="com.motorola.voicemail.impl.sync.PayloadSyncJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="true" />
+        <service
+            android:name="com.motorola.voicemail.impl.sync.PeriodicSyncJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="true" />
+        <provider
+            android:name="com.prc.provider.PhoneCityProvider"
+            android:permission="android.permission.READ_CONTACTS"
+            android:exported="true"
+            android:authorities="com.newcontact.phonecity.provider" />
+        <activity
+            android:theme="@style/SettingsStyle.DayNight"
+            android:label="@string/onekey_dial_title"
+            android:name="com.android.dialer.onekeydial.PrcOneKeyDialActivity"
+            android:exported="false" />
+        <activity
+            android:theme="@style/Dialer.DayNight.ThemeBase.NoActionBar"
+            android:label="@string/prc_moto_voice_mail_title"
+            android:name="com.prc.voicemail.dialer.PrcVoiceTutorialActivity"
+            android:exported="false" />
+        <activity
+            android:theme="@style/PrcSettingTheme"
+            android:label="@string/prc_moto_voice_mail_title"
+            android:name="com.prc.voicemail.dialer.PrcVoiceMailSettingActivity"
+            android:exported="false" />
+        <activity
+            android:theme="@style/SettingsStyle.DayNight"
+            android:label="@string/prc_voicemail_greeting_title"
+            android:name="com.prc.voicemail.dialer.greetings.VoicemailGreetListActivity"
+            android:exported="false" />
+        <activity
+            android:theme="@style/SettingsStyle.DayNight"
+            android:label="@string/prc_moto_select_contact_title"
+            android:name="com.prc.voicemail.dialer.PrcSelectedContactListActivity"
+            android:exported="false" />
+        <activity
+            android:theme="@style/PrcSettingTheme"
+            android:label="@string/dialer_settings_label"
+            android:name="com.prc.settings.PrcDialerSettingActivity"
+            android:exported="false" />
+        <activity
+            android:theme="@style/PrcSettingTheme"
+            android:label="@string/onekey_dial_title"
+            android:name="com.prc.settings.PrcOneKeyDialActivity"
+            android:exported="false" />
+        <activity
+            android:theme="@style/PrcSettingTheme"
+            android:label="@string/about_phone_label"
+            android:name="com.prc.settings.PrcAboutPhoneActivity"
+            android:exported="false" />
+        <activity
+            android:theme="@style/PrcSettingTheme"
+            android:label="@string/prc_emergency_platform_lable"
+            android:name="com.prc.emergencyplatform.ui.EmergencyPlatformMainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="com.android.settings.action.EXTRA_SETTINGS" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.emergency" />
+            <meta-data
+                android:name="com.android.settings.order"
+                android:value="150" />
+            <meta-data
+                android:name="com.android.settings.title"
+                android:resource="@string/prc_emergency_platform_lable" />
+            <meta-data
+                android:name="com.android.settings.keyhint"
+                android:value="add_settings_entry_test" />
+            <meta-data
+                android:name="com.android.settings.icon"
+                android:resource="@drawable/prc_ic_alarm_auxiliary" />
+        </activity>
+        <provider
+            android:name="com.prc.emergencyplatform.utils.SettingsRouteProvider"
+            android:permission="com.motorola.permission.WRITE_SECURE_SETTINGS"
+            android:exported="true"
+            android:authorities="com.motorola.cn.prcsettingsext.appclone" />
+        <provider
+            android:name="com.prc.emergencyplatform.utils.SettingSearchProvider"
+            android:permission="android.permission.READ_SEARCH_INDEXABLES"
+            android:exported="true"
+            android:authorities="com.motorola.cn.prc.addsettingsentry.indexable"
+            android:grantUriPermissions="true">
+            <intent-filter>
+                <action
+                    android:name="android.content.action.SEARCH_INDEXABLES_PROVIDER" />
+            </intent-filter>
+        </provider>
+        <activity
+            android:theme="@style/zxing_CaptureTheme"
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:clearTaskOnLaunch="true"
+            android:stateNotNeeded="true"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="com.android.dialer.androidx-startup">
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+        </provider>
+    </application>
+</manifest>
