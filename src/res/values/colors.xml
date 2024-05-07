@@ -107,13 +107,10 @@
     <color name="design_snackbar_background_color">#ff323232</color>
     <color name="dialer_background_color">#ffb0bfc5</color>
     <color name="dialer_call_green">@color/prc_positive_green</color>
-    <color name="dialer_dark_background_color">#ff455a64</color>
     <color name="dialer_dark_dialog_background_color">#ff313235</color>
     <color name="dialer_dark_navigation_bar_color">#ff131416</color>
     <color name="dialer_dark_primary_text_color_inverse">@color/google_blue_50</color>
     <color name="dialer_dark_secondary_color">@color/lake_a1_100</color>
-    <color name="dialer_dark_secondary_text_color_inverse">@color/lake_a1_100</color>
-    <color name="dialer_dark_theme_color">#ff455a64</color>
     <color name="dialer_dark_theme_color_20pct">#33202124</color>
     <color name="dialer_dark_theme_color_dark">#ff2374ce</color>
     <color name="dialer_divider_line_color">#11000000</color>
@@ -176,7 +173,6 @@
     <color name="incoming_answer_icon">#ff006b5b</color>
     <color name="lake_a1_0">@android:color/system_accent1_0</color>
     <color name="lake_a1_10">@android:color/system_accent1_10</color>
-    <color name="lake_a1_100">#ffb0bfc5</color>
     <color name="lake_a1_1000">@android:color/system_accent1_1000</color>
     <color name="lake_a1_200">@android:color/system_accent1_200</color>
     <color name="lake_a1_300">@android:color/system_accent1_300</color>
@@ -231,7 +227,6 @@
     <color name="lake_n2_100">#ff556a74</color>
     <color name="lake_n2_1000">#ffff5a64</color>
     <color name="lake_n2_200">#ffb0bfc5</color>
-    <color name="lake_n2_300">#ffb0bfc5</color>
     <color name="lake_n2_400">#ff546e7a</color>
     <color name="lake_n2_50">#ffb0bfc5</color>
     <color name="lake_n2_500">#ff78909c</color>
@@ -398,7 +393,6 @@
     <color name="m3_sys_color_dark_on_primary_container">@color/m3_ref_palette_primary90</color>
     <color name="m3_sys_color_dark_on_secondary">@color/m3_ref_palette_secondary20</color>
     <color name="m3_sys_color_dark_on_secondary_container">@color/m3_ref_palette_secondary90</color>
-    <color name="m3_sys_color_dark_on_surface">@color/m3_ref_palette_neutral90</color>
     <color name="m3_sys_color_dark_on_surface_variant">@color/m3_ref_palette_neutral_variant80</color>
     <color name="m3_sys_color_dark_on_tertiary">@color/m3_ref_palette_tertiary20</color>
     <color name="m3_sys_color_dark_on_tertiary_container">@color/m3_ref_palette_tertiary90</color>
@@ -685,7 +679,6 @@
     <color name="primary_text_disabled_material_dark">#4dffffff</color>
     <color name="primary_text_disabled_material_light">#39000000</color>
     <color name="remove_highlighted_text_color">#ffff3f3b</color>
-    <color name="ripple_material_dark">#33ffffff</color>
     <color name="ripple_material_light">#1f000000</color>
     <color name="rtt_button_selected_color">#ff2a56c6</color>
     <color name="rtt_button_unselected_color">#dd000000</color>
@@ -704,7 +697,6 @@
     <color name="select_sim_pop_bg">@color/lake_n1_0</color>
     <color name="shortcut_add_contact_background_color">#fff5f5f5</color>
     <color name="shortcut_add_contact_foreground_color">#ff2a56c6</color>
-    <color name="siderbarview_text_color">#ff969696</color>
     <color name="siderbarview_texthint_color">@color/lake_n1_10</color>
     <color name="spam_contact_background">#ffa52714</color>
     <color name="statusbar_background_color">?android:colorPrimary</color>

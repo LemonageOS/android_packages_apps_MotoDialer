@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- DARK - default background color -->
+    <color name="dialer_dark_background_color">@*android:color/system_neutral2_900</color>
+
+    <!-- DARK - transparent background button color -->
+    <color name="dialer_dark_secondary_text_color_inverse">@*android:color/system_accent1_200</color>
+
+    <!-- DARK - bottom navigation bar unselected item label & icon color -->
+    <color name="lake_n2_300">@*android:color/system_neutral2_300</color>
+
+    <!-- DARK - primary color -->
+    <color name="dialer_dark_theme_color">@*android:color/system_neutral2_900</color>
+
+    <!-- DARK - accent color -->
+    <color name="lake_a1_100">@*android:color/system_accent1_200</color>
+
+    <!-- DARK - title bar text color -->
+    <color name="m3_sys_color_dark_on_surface">@*android:color/system_neutral2_50</color>
+
+    <!-- DARK - alphabetical index text color -->
+    <color name="siderbarview_text_color">@*android:color/system_neutral2_400</color>
+
+    <!-- DARK - ripple color -->
+    <color name="ripple_material_dark">#19FFFFFF</color>
+
+</resources>

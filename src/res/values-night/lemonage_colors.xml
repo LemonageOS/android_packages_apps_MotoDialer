@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- FAB background color -->
+    <color name="primary_container">@*android:color/system_accent1_200</color>
+
+    <!-- FAB icon color -->
+    <color name="on_primary_container">@*android:color/system_neutral2_900</color>
+
+    <!-- bottom navigation bar & dial pad background color -->
+    <color name="alert_dialog_bg">@*android:color/system_neutral2_800</color>
+
+    <!-- title bar background color -->
+    <color name="prc_default_view_bg">@*android:color/system_neutral2_900</color>
+
+    <!-- contacts search bar background color -->
+    <color name="prc_search_view_bg">@*android:color/system_neutral2_800</color>
+
+    <!-- bottom navigation bar pill background color -->
+    <color name="prc_navagation_icon_shape_bg_color">@*android:color/system_accent2_600</color>
+
+    <!-- checked switch track color -->
+    <color name="prc_turn_on_track_color">@*android:color/system_accent1_200</color>
+
+    <!-- unchecked switch track color -->
+    <color name="prc_turn_off_track_color">@*android:color/system_neutral2_700</color>  
+
+    <!-- checked switch thumb color -->
+    <color name="prc_turn_on_thumb_color">@*android:color/system_accent1_700</color>    
+
+    <!-- unchecked switch thumb color -->
+    <color name="prc_turn_off_thumb_color">@*android:color/system_neutral2_300</color>
+
+    <!-- MD3 title bar background color -->
+    <color name="prc_actionMode_color">@*android:color/system_neutral2_800</color>
+
+    <!-- voicemail master switch background color -->
+    <color name="prc_voice_back_color">@*android:color/system_accent2_800</color>
+
+    <!-- voicemail master switch text color -->
+    <color name="prc_voice_state_text_color">@*android:color/system_neutral1_50</color>
+
+    <!-- contacts alphabetic index highlight foreground color  -->
+    <color name="highlighter_text_color">@*android:color/system_accent1_200</color>
+
+    <!-- contacts alphabetic index highlight background color  -->
+    <color name="siderbarview_texthint_color">@*android:color/system_neutral2_900</color>
+
+    <!-- placeholder icon color  -->
+    <color name="prc_block_color">@*android:color/system_neutral2_300</color>
+
+    <!-- checked radio button color-->
+    <color name="prc_avatar_select_color">@*android:color/system_accent1_200</color>
+
+    <!-- unchecked radio button color-->
+    <color name="prc_check_box_not_select_color">@*android:color/system_neutral2_400</color>
+
+    <!-- dial button background color -->
+    <color name="prc_positive_green">@*android:color/system_accent1_200</color>
+
+    <!-- dial button SIM label color -->
+    <color name="prc_sim_lable_icon_color">@*android:color/system_neutral2_900</color>    
+
+    <!-- dial pad numbers text color -->
+    <color name="prc_dialpad_text_color_primary">@*android:color/system_neutral2_50</color>
+
+     <!-- bottom navigation bar selected item label & icon color-->
+    <color name="prc_navagation_icon_select_color">@*android:color/system_accent2_50</color>
+
+    <!-- placeholder text color -->
+    <color name="contacts_add_text_color">@*android:color/system_neutral1_200</color>
+
+    <!-- dial pad text color -->
+    <color name="prc_dialpad_text_color_secondary">@*android:color/system_neutral2_200</color>
+
+    <!-- back arrow color -->
+    <color name="prc_text_secondary_color">@*android:color/system_neutral2_50</color>
+
+    <!-- primary text color -->
+    <color name="prc_text_primary_color">@*android:color/system_neutral1_50</color>
+
+    <!-- settings category text color -->
+    <color name="prc_Digits_text_color">@*android:color/system_neutral1_100</color>
+
+</resources>
